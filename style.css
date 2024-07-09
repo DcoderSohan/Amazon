@@ -9,6 +9,7 @@
 
 .navbar {
   position: relative;
+  top: 20px;
   z-index: 100;
   display: flex;
   justify-content: space-around;
@@ -42,20 +43,53 @@
 }
 
 .hero {
-  background: url("herobg.jpg") center center,linear-gradient(90deg,rgba(247, 241, 241, 0.004),rgb(13, 13, 13));
+  background: url("herobg.jpg") center center no-repeat;
   width: 100%;
-  height: 80vh;
+  /* height: 80vh; */
   position: absolute;
   top: 0;
   z-index: 1;
 }
-.hero h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    margin: 300px auto;
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
+
+.hero .container {
+  width: 80vw;
+  margin: 300px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+}
+.hero .container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+.hero .container p {
+  margin-top: 20px;
+  color: white;
+  width: 60vw;
+  text-align: center;
+  margin: auto;
+}
+button {
+  font-size: 13px;
+  font-weight: bolder;
+  margin-top: 20px;
+  padding: 8px 15px;
+  background: #063c01;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
