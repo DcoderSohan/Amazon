@@ -7,89 +7,115 @@
   font-weight: 200;
 }
 
-.navbar {
-  position: relative;
-  top: 20px;
-  z-index: 100;
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+#nav{
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  border: 1px solid grey;
-  margin: 10px;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  padding: 10px;
-  border-radius: 20px;
-}
-.navbar h1 a {
-  text-decoration: none;
+  justify-content:space-between;
+  padding: 40px 50px;
   color: white;
-  font-weight: 600;
 }
-.navbar .menu ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+#nav h1{
+  font-size: 30px;
 }
-.navbar .menu ul li {
-  padding: 5px 10px;
+#nav i{
+  font-size: 30px;
+  font-weight: 800;
   cursor: pointer;
-  color: rgb(168, 165, 165);
-}
-.navbar .menu ul li:hover {
-  border-radius: 20px;
-  color: white;
-  font-weight: 300;
 }
 
-.hero {
-  background: url("herobg.jpg") center center no-repeat;
-  width: 100%;
-  /* height: 80vh; */
+.sideMenu{
+  height: 100%;
+  width: 40%;
   position: absolute;
+  background-color: rgba(255, 255, 255, 0.247);
   top: 0;
-  z-index: 1;
+  right: -45%;
+  backdrop-filter: blur(10px);
+  padding: 140px 30px;
 }
-
-.hero .container {
-  width: 80vw;
-  margin: 300px auto;
+.sideMenu ul{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  /* gap: 30px; */
+  gap: 50px;
+  padding: 20px;
+  list-style: none;
 }
-.hero .container h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 500;
+/* .sideMenu ul li{
+  margin-top: 50px;
+} */
+.sideMenu ul li a{
   color: white;
-}
-.hero .container p {
-  margin-top: 20px;
-  color: white;
-  width: 60vw;
-  text-align: center;
-  margin: auto;
-}
-button {
-  font-size: 13px;
-  font-weight: bolder;
-  margin-top: 20px;
-  padding: 8px 15px;
-  background: #063c01;
-  border: 1px solid grey;
-  border-radius: 15px;
-}
-button a {
   text-decoration: none;
-  color: white;
 }
-button:hover {
-  background: transparent;
-  backdrop-filter: blur(10px);
+.sideMenu i{
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width:789) {
+  body{
+    overflow-x: hidden;
+  }
+  #nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 40px 50px;
+    color: white;
+  }
+  #nav h1{
+    font-size: 30px;
+  }
+  #nav i{
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .sideMenu{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.247);
+    top: 0;
+    right: -45%;
+    backdrop-filter: blur(10px);
+    padding: 140px 30px;
+  }
+  .sideMenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    list-style: none;
+  }
+  /* .sideMenu ul li{
+    margin-top: 50px;
+  } */
+  .sideMenu ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .sideMenu i{
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+  }
 }
